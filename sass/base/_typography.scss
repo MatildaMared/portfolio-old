@@ -8,13 +8,38 @@ body {
     color: $color-grey-dark;
 }
 
-.heading-1 {
+.heading-primary {
     font-family: $font-secondary;
     letter-spacing: 1px;
     font-size: 5rem;
     color: rgba($color-primary-lightest, .9);
     text-shadow: $shadow;
     font-weight: 400;
+}
+
+.heading-secondary {
+    text-align: center;
+    letter-spacing: -1px;
+    font-size: 3.5rem;
+    color: rgba($color-primary-dark, .9);
+    text-shadow: $shadow;
+    font-weight: 800;
+}
+
+.heading-tertiary {
+    text-align: center;
+    font-size: 2.5rem;
+    color: rgba($color-primary-dark, .9);
+    text-shadow: $shadow;
+    font-weight: 800;
+
+    &--light {
+        color: $color-primary-light;
+    }
+}
+
+.text {
+    font-size: 1.6rem;
 }
 
 .tagline {

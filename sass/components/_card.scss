@@ -1,0 +1,38 @@
+.card {
+    margin: 2rem;
+    max-width: 500px;
+    flex-grow: 100%;
+    padding: 3rem;
+    border-radius: 2.5rem;
+    text-align: center;
+    transition: all .3s;
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+    background-image: url("../images/background.svg");
+    /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
+    background-size: contain;
+
+    &__icon {
+        font-size: 8rem;
+        display: inline-block;
+        background-image: linear-gradient(to right, $color-primary, $color-secondary);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    &__heading {
+        font-size: 2.5rem;
+        color: $color-primary-light;
+        text-shadow: $shadow;
+    }
+
+    &__text {
+        text-align: left;
+        color: rgba($color-primary-lightest, .8);
+    }
+
+    &:hover {
+        transform: translateY(-1.5rem) scale(1.03);
+        box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+    }
+}
