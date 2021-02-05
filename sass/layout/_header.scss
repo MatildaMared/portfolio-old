@@ -1,13 +1,12 @@
 .header {
     height: 50vh;
-    background-color: $color-primary-dark;
+    padding-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 0% 100%);
     padding-bottom: 7rem;
-    background-color: #392259;
     background-image: url("../images/background.svg");
     /* background by SVGBackgrounds.com */
     background-attachment: fixed;
