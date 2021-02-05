@@ -1,0 +1,29 @@
+.header {
+    height: 50vh;
+    background-color: $color-primary-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100%);
+    padding-bottom: 7rem;
+    background-color: #392259;
+    background-image: url("../images/background.svg");
+    /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
+    background-size: contain;
+
+    &__text-container {
+        width: 70%;
+        height: 70%;
+        background-image: url(../images/working-girl.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,7 +1,9 @@
 // Colors
-$color-primary: #55c57a;
-$color-primary-light: #7ed56f;
-$color-primary-dark: #28b485;
+$color-primary: #8850BF;
+$color-primary-light: #E0C4F2;
+$color-primary-lightest: lighten($color-primary-light, 7);
+$color-primary-dark: #5A378C;
+$color-primary-darkest: #392259;
 
 $color-secondary-light: #ffb900;
 $color-secondary-dark: #ff7730;
@@ -13,10 +15,17 @@ $color-grey-light: #eee;
 $color-grey: #777;
 $color-grey-dark: #333;
 $color-white: #FFF;
-$color-black: #000;
+$color-black: #190F26;
+
+// Grid
+$grid-width: 114rem;
+
+// Fonts
+$font-primary: 'Lato', sans-serif;
+$font-secondary: 'Libre Baskerville', serif;
 
 // Font sizes
 $default-font-size: 1.6rem;
 
-// Grid
-$grid-width: 114rem;
+//Shadow
+$shadow: 0 1rem 2rem ($color-black, .2);

@@ -12,6 +12,7 @@ $breakpoint argument choices:
 - tab-land
 - big-desktop
 */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Libre+Baskerville:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -43,8 +44,8 @@ html {
 }
 
 body {
-  padding: 3rem;
   box-sizing: border-box;
+  background-color: #efe1f8;
 }
 
 @keyframes moveInLeft {
@@ -84,4 +85,77 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.heading-1 {
+  font-family: "Libre Baskerville", serif;
+  letter-spacing: 1px;
+  font-size: 5rem;
+  color: #efe1f8;
+  text-shadow: 0 1rem 2rem #190F26, 0.2;
+  font-weight: 400;
+}
+
+.tagline {
+  text-transform: uppercase;
+  letter-spacing: -.04rem;
+  word-spacing: 1rem;
+  color: #E0C4F2;
+  text-shadow: 0 1rem 2rem #190F26, 0.2;
+}
+
+.header {
+  height: 50vh;
+  background-color: #5A378C;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(0% 0%, 100% 0, 100% 75%, 0% 100%);
+  padding-bottom: 7rem;
+  background-color: #392259;
+  background-image: url("../images/background.svg");
+  /* background by SVGBackgrounds.com */
+  background-attachment: fixed;
+  background-size: contain;
+}
+
+.header__text-container {
+  width: 70%;
+  height: 70%;
+  background-image: url(../images/working-girl.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  background-image: linear-gradient(to right bottom, #8850BF, #5A378C);
+  height: 5vh;
+  width: 100%;
+}
+
+.navigation {
+  background-color: #392259;
+  height: 5vh;
+  width: 100%;
+  justify-self: flex-start;
+  align-self: flex-start;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }

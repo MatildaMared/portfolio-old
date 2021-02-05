@@ -1,0 +1,11 @@
+.navigation {
+    background-color: $color-primary-darkest;
+    height: 5vh;
+    width: 100%;
+    justify-self: flex-start;
+    align-self: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
