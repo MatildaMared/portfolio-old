@@ -99,6 +99,7 @@ body {
 }
 
 .heading-secondary {
+  padding: 3rem 0;
   text-align: center;
   letter-spacing: -1px;
   font-size: 3.5rem;
@@ -171,7 +172,7 @@ body {
 }
 
 .header {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -187,7 +188,7 @@ body {
 .header__text-container {
   width: 80%;
   height: 100%;
-  max-width: 60rem;
+  max-width: 80rem;
   background-image: url(../images/working-girl.svg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -197,6 +198,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 8rem;
 }
 
 .footer {
@@ -254,15 +256,48 @@ body {
 }
 
 .section-welcome {
-  padding-top: 20rem;
+  padding-top: 10rem;
   margin: 2rem;
 }
 
-.section-welcome__text-bubble {
+.section-welcome__content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 120rem;
   margin: 0 auto;
+  padding: 2rem;
+}
+
+.section-welcome__img-wrapper {
+  width: 20rem;
+  height: 20rem;
+  margin-right: 4rem;
+}
+
+.section-welcome__img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 200px;
+  border-radius: 50%;
+  filter: drop-shadow(0 1rem 2rem rgba(25, 15, 38, 0.2));
+}
+
+.section-welcome__heading {
+  font-size: 3rem;
+  color: rgba(90, 55, 140, 0.9);
+  text-shadow: 0 1rem 2rem #190F26, 0.2;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.section-welcome__text-bubble {
+  width: 70%;
+  margin: 2rem;
   max-width: 80rem;
   position: relative;
-  padding: 3rem 3rem 3rem 6.5rem;
+  padding: 5rem 5rem 5rem 10rem;
   background: #FFF;
   border-radius: 10px;
   margin-bottom: 35px;
@@ -274,12 +309,12 @@ body {
   /*Unicode for Left Double Quote*/
   /*Font*/
   font-family: "Libre Baskerville", serif;
-  font-size: 8rem;
+  font-size: 12rem;
   color: #8850BF;
   /*Positioning*/
   position: absolute;
-  left: 20px;
-  top: 5px;
+  left: 30px;
+  top: 17px;
 }
 
 .section-welcome__text-bubble:after {
