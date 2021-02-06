@@ -1,16 +1,17 @@
 .card {
-    margin: 2rem;
-    max-width: 500px;
-    flex-grow: 100%;
-    padding: 3rem;
-    border-radius: 2.5rem;
-    text-align: center;
+    filter: drop-shadow(0 .5rem 1rem rgba($color-black, .3));
     transition: all .3s;
-    box-shadow: 0 1rem 2rem rgba($color-black, .2);
-    background-image: url("../images/background.svg");
-    /* background by SVGBackgrounds.com */
-    background-attachment: fixed;
-    background-size: contain;
+
+    &__content {
+        padding: 3rem;
+        text-align: center;
+        background-image: url("../images/background.svg");
+        /* background by SVGBackgrounds.com */
+        background-attachment: fixed;
+        background-size: contain;
+        clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+        padding-bottom: 15rem;
+    }
 
     &__icon {
         font-size: 8rem;
@@ -33,6 +34,6 @@
 
     &:hover {
         transform: translateY(-1.5rem) scale(1.03);
-        box-shadow: 0 1.5rem 3rem rgba($color-black, .2);
+        filter: drop-shadow(0 .7rem 1.5rem rgba($color-black, .3));
     }
 }

@@ -25,6 +25,10 @@ body {
     color: rgba($color-primary-dark, .9);
     text-shadow: $shadow;
     font-weight: 800;
+
+    &--light {
+        color: rgba($color-primary-light, .9);
+    }
 }
 
 .heading-tertiary {
