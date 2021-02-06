@@ -8,6 +8,7 @@
     margin-bottom: 35px;
     box-shadow: $shadow;
     animation: moveInRight 1s;
+    border-radius: .5rem;
 
     &:after {
         content: ' ';

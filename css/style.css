@@ -158,8 +158,7 @@ body {
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
-  clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
-  padding-bottom: 15rem;
+  border-radius: .5rem;
 }
 
 .card__icon {
@@ -196,6 +195,7 @@ body {
   margin-bottom: 35px;
   box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   animation: moveInRight 1s;
+  border-radius: .5rem;
 }
 
 .text-bubble:after {
@@ -256,11 +256,31 @@ body {
   box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
+.project__description {
+  margin-bottom: .5rem;
+}
+
 .project__img {
   width: 100%;
 }
 
+.project__link {
+  transition: all .3s;
+  text-align: right;
+  color: #8850BF;
+  text-decoration: none;
+  padding: .5rem;
+}
+
+.project__link:hover {
+  background-color: #8850BF;
+  color: #FFF;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  border-radius: .5rem;
+}
+
 .project__technologies-list {
+  margin-top: .5rem;
   list-style: none;
 }
 
@@ -396,15 +416,15 @@ body {
 
 .section-skills {
   padding: 20rem 0;
+  margin: 2rem;
 }
 
 .section-skills__card-wrapper {
   margin: 0 auto;
-  padding: 2rem;
   max-width: 120rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 3rem;
 }
 
 .section-knowledge {
@@ -433,7 +453,7 @@ body {
   position: relative;
   display: inline-block;
   font-size: 10rem;
-  color: #5A378C;
+  color: #8850BF;
 }
 
 .section-knowledge__icon:hover :nth-child(1) {
@@ -491,10 +511,71 @@ body {
 }
 
 .section-projects__projects-wrapper {
+  padding: 2rem;
   width: 100%;
   max-width: 120rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-gap: 3rem;
+}
+
+.section-education {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+.section-education__education-wrapper {
+  transition: all .3s;
+  margin: 4rem 0;
+  width: 100%;
+  max-width: 80rem;
+  position: relative;
+  padding: 3rem;
+  background: #FFF;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  animation: moveInRight 1s;
+  border-radius: .5rem;
+}
+
+.section-education__education-wrapper:hover {
+  transform: translateY(-1.5rem) scale(1.05);
+  filter: drop-shadow(0 0.7rem 1.5rem rgba(25, 15, 38, 0.2));
+}
+
+.section-education__education-heading:before {
+  content: "\1F393";
+  font-size: 2.5rem;
+}
+
+.section-education__details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-education__year, .section-education__school {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: #5A378C;
+  font-weight: 400;
+}
+
+.section-contact {
+  height: 60vh;
+  padding: 20rem 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  clip-path: polygon(0% 20%, 100% 0, 100% 100%, 0% 100%);
+  background-image: url("../images/background.svg");
+  /* background by SVGBackgrounds.com */
+  background-attachment: fixed;
+  background-size: contain;
 }
