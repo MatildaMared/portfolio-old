@@ -73,6 +73,10 @@
 
     &__list {
         list-style-type: none;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: .5rem;
     }
 
     &__item {
@@ -103,6 +107,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
-        grid-gap: 2rem;
+        grid-gap: 3rem;
     }
 }

@@ -1,11 +1,38 @@
 .navigation {
     background-color: $color-primary-darkest;
-    height: 5vh;
     width: 100%;
-    justify-self: flex-start;
-    align-self: flex-start;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+
+    &__heading {
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    &__list {
+
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+    }
+
+    &__link {
+        color: $color-secondary;
+        font-size: 1.3rem;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
 }

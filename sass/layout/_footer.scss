@@ -1,5 +1,14 @@
 .footer {
     background-color: $color-primary-dark;
-    height: 5vh;
     width: 100%;
+    text-align: center;
+    padding: 3rem;
+
+    &__copyright {
+        color: $color-secondary;
+        text-transform: uppercase;
+        font-weight:400;
+        letter-spacing: 2px;
+        font-size: 1.3rem;
+    }
 }
