@@ -1,0 +1,38 @@
+.text-bubble {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 80rem;
+    position: relative;
+    padding: 5rem 5rem 5rem 10rem;
+    background: $color-white;
+    margin-bottom: 35px;
+    box-shadow: $shadow;
+    animation: moveInRight 1s;
+
+    &:before {
+        content: "\201C"; /*Unicode for Left Double Quote*/
+
+        /*Font*/
+        font-family: $font-secondary;
+        font-size: 12rem;
+        color: $color-primary;
+        
+        /*Positioning*/
+        position: absolute;
+        left: 50px;
+        top: 20px;
+    }
+
+    &:after {
+        content: ' ';
+        border: 30px solid;
+        border-color: $color-white transparent transparent $color-white;
+        position: absolute;
+        bottom: -40px;
+        left: 50px;
+    }
+
+    &:hover {
+        transform: rotateX(3deg);
+    }
+}

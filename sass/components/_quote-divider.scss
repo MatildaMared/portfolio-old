@@ -1,0 +1,35 @@
+.quote-divider {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0% 20%, 100% 0, 100% 80%, 0% 100%);
+    padding-bottom: 7rem;
+    background-image: url("../images/background.svg");
+    /* background by SVGBackgrounds.com */
+    background-attachment: fixed;
+    background-size: contain;
+    padding: 30rem 0;
+
+    &__wrapper {
+        width: 80%;
+        max-width: 60rem;
+    }
+
+    &__quote {
+        font-family: $font-secondary;
+        color: rgba($color-primary-lightest, .9);
+        font-size: 3rem;
+        text-shadow: $shadow;
+        line-height: 1.3;
+    }
+
+    &__author {
+        text-align: right;
+        font-size: 1.8rem;
+        color: $color-secondary;
+        text-shadow: $shadow;
+    }
+}
