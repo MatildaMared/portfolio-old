@@ -1,0 +1,40 @@
+.icon {
+    margin: 0 auto;
+    line-height: 1;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    font-size: 10rem;
+    color: $color-primary;
+
+    &:hover {
+
+        & :nth-child(1) {
+            filter: blur(.4rem);
+            transition: all .3s;
+        }
+
+        & :nth-child(2) {
+            visibility: visible;
+            opacity: 1;
+            transition: all 1s;
+        }
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: rgba($color-white, .8);
+        font-weight: 700;
+        @include center-horizontal-vertical;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 100;
+        text-shadow: 0 .2rem .4rem rgba($color-black, .3);
+    }
+
+    &--light {
+        color: $color-primary-light;
+    }
+}

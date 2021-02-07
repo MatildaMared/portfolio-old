@@ -127,35 +127,37 @@ body {
 }
 
 .heading-secondary--light {
-  color: rgba(224, 196, 242, 0.9);
+  color: #ffd630;
+  color: rgba(255, 214, 48, 0.8);
 }
 
 .heading-tertiary {
   text-align: center;
   font-size: 2.5rem;
-  color: rgba(90, 55, 140, 0.9);
+  color: rgba(90, 55, 140, 0.8);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 800;
 }
 
 .heading-tertiary--light {
-  color: #E0C4F2;
+  color: rgba(255, 214, 48, 0.8);
 }
 
 .text {
   font-size: 1.6rem;
+  line-height: 1.5;
 }
 
 .tagline {
   text-transform: uppercase;
   letter-spacing: -.04rem;
   word-spacing: 1rem;
-  color: #ffe75edd;
+  color: #ffd630;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
 .heading-icon {
-  margin-right: 1.5rem;
+  margin-left: .5rem;
 }
 
 .link {
@@ -200,7 +202,7 @@ body {
 .card__icon {
   font-size: 8rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #8850BF, #ffe75edd);
+  background-image: linear-gradient(to right, #8850BF, #ffd630);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -221,6 +223,47 @@ body {
   filter: drop-shadow(0 0.7rem 1.5rem rgba(25, 15, 38, 0.3));
 }
 
+.icon {
+  margin: 0 auto;
+  line-height: 1;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  font-size: 10rem;
+  color: #8850BF;
+}
+
+.icon:hover :nth-child(1) {
+  filter: blur(0.4rem);
+  transition: all .3s;
+}
+
+.icon:hover :nth-child(2) {
+  visibility: visible;
+  opacity: 1;
+  transition: all 1s;
+}
+
+.icon__description {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 100;
+  text-shadow: 0 0.2rem 0.4rem rgba(25, 15, 38, 0.3);
+}
+
+.icon--light {
+  color: #E0C4F2;
+}
+
 .image-divider {
   padding: 10rem;
   max-width: 120rem;
@@ -239,17 +282,17 @@ body {
   max-width: 80rem;
   position: relative;
   padding: 5rem;
-  background: #FFF;
+  background: rgba(255, 255, 255, 0.8);
   margin-bottom: 35px;
   box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   animation: moveInRight 1s;
   border-radius: .5rem;
 }
 
-.text-bubble:after {
+.text-bubble::after {
   content: ' ';
-  border: 30px solid;
-  border-color: #FFF transparent transparent #FFF;
+  border: 20px solid;
+  border-color: rgba(255, 255, 255, 0.8) transparent transparent rgba(255, 255, 255, 0.8);
   position: absolute;
   bottom: -40px;
   left: 50px;
@@ -290,7 +333,7 @@ body {
 .quote-divider__author {
   text-align: right;
   font-size: 1.8rem;
-  color: #ffe75edd;
+  color: #ffd630;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
@@ -402,7 +445,7 @@ body {
 }
 
 .footer__copyright {
-  color: #ffe75edd;
+  color: #ffd630;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
@@ -418,7 +461,7 @@ body {
 }
 
 .navigation__heading {
-  color: #ffe75edd;
+  color: #ffd630;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
@@ -447,7 +490,7 @@ body {
 }
 
 .navigation__link {
-  color: #ffe75edd;
+  color: #ffd630;
   font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -498,7 +541,7 @@ body {
 }
 
 .navigation__hamburger, .navigation__hamburger::before, .navigation__hamburger::after {
-  background-color: #ffe75edd;
+  background-color: #ffd630;
   height: 2px;
   width: 4rem;
   border-radius: 2px;
@@ -683,6 +726,10 @@ body {
   font-weight: 400;
 }
 
+.section-education__description {
+  padding: .5rem 0;
+}
+
 .section-education__divider {
   width: 10rem;
   margin: 0 auto;
@@ -692,8 +739,7 @@ body {
 }
 
 .section-contact {
-  height: 60vh;
-  padding: 20rem 0;
+  padding: 20rem 1rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -703,4 +749,13 @@ body {
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
+}
+
+.section-contact__list {
+  list-style: none;
+}
+
+.section-contact__item {
+  display: inline-block;
+  padding: 1rem;
 }

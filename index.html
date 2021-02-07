@@ -43,8 +43,8 @@
     <section class="section-welcome">
         <article class="text-bubble">
             <h2 class="heading-secondary">
-                <span class="heading-icon">&#128075;</span>
                 Hej, så kul att du har hittat hit!
+                <span class="heading-icon">&#128075;</span>
             </h2>
             <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At nisi iure voluptates, molestiae aut eligendi quam laudantium cupiditate, doloribus delectus modi incidunt neque in, nemo quas voluptate? Numquam explicabo ipsam consequatur, sit tenetur et quibusdam eos quia voluptate totam porro aperiam suscipit, a unde est voluptatum nemo ratione aliquid! Eaque, ipsam ullam ut numquam accusamus dolorem, et, quae quidem autem expedita fugiat recusandae perferendis officia quo fuga. Nam quibusdam dolorem aspernatur! Aut recusandae aliquam iusto quam sed explicabo, fuga omnis quisquam placeat necessitatibus quia. Earum ipsa in sit numquam aliquam asperiores quae, consectetur adipisci. Laudantium porro reiciendis ut a illum.</p>
             </article>
@@ -92,39 +92,39 @@
     <section class="section-knowledge">
         <h2 class="heading-secondary">Språk & kunskaper</h2>
         <article class="section-knowledge__knowledges">
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-html5"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Html5
                 </figcaption>
             </figure>
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-css3-alt"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Css3
                 </figcaption>
             </figure>
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-js-square"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Javascript
                 </figcaption>
             </figure>
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-sass"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Sass
                 </figcaption>
             </figure>
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-git-alt"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Git
                 </figcaption>
             </figure>
-            <figure class="section-knowledge__icon">
+            <figure class="icon">
                 <i class="fab fa-npm"></i>
-                <figcaption class="section-knowledge__figcaption">
+                <figcaption class="icon__description">
                     Npm
                 </figcaption>
             </figure>
@@ -266,7 +266,7 @@
         </div>
     </section>
 
-    <!-- Utilbdning -->
+    <!-- Utbildning -->
 
     <section class="section-education">
         <h2 class="heading-secondary">Utbildning</h2>
@@ -302,7 +302,7 @@
             </article>
             <hr class="section-education__divider">
 
-            <!-- Enskida kurser & Certifikat -->
+            <!-- Enskilda kurser & Certifikat -->
 
             <h3 class="heading-tertiary">Enskilda kurser & certifikat</h3>
             <article class="section-education__course">
@@ -333,19 +333,85 @@
                 <a href="https://www.udemy.com/course/advanced-css-and-sass" target="_blank" class="link-small">Länk till kurs</a>               
             </article>
         </div>
-
     </section>
+
+    <!-- Image Divider -->
 
     <aside class="image-divider">
         <img src="images/certification.svg" alt="Illustration of girl in purple shirt and a certificate" class="image-divider__img">
     </aside>
 
+    <!-- Arbetslivserfarenheter -->
+
     <section class="section-experience">
         <h2 class="heading-secondary">Arbetslivserfarenheter</h2>
     </section>
 
+    <!-- Kontakt -->
+
     <section class="section-contact">
         <h2 class="heading-secondary heading-secondary--light">Kontakt</h2>
+        <article class="text-bubble text-bubble--dark-bg">
+            <h2 class="heading-tertiary">
+                Vill du komma i kontakt med mig?
+                <span class="heading-icon">&#128105;</span>
+            </h2>
+            <p class="text">
+                Har du några funderingar, förslag eller helt enkelt bara vill snacka lite kod? Klicka på någon av ikonerna nedan eller använd dig av formuläret för att komma i kontakt med mig. Jag hoppas vi hörs!
+            </p>
+        </article>
+
+        <!-- Kontakt-ikoner -->
+        <nav class="section-contact__nav">
+            <ul class="section-contact__list">
+                <li class="section-contact__item">
+                    <a href="https://github.com/MatildaMared" target="_blank" class="icon icon--light">
+                        <i class="fab fa-github"></i>
+                        <span class="icon__description">Github</span>
+                    </a>
+                </li>
+                <li class="section-contact__item">
+                    <a href="https://www.linkedin.com/in/matilda-mared" target="_blank" class="icon icon--light">
+                        <i class="fab fa-linkedin"></i>
+                        <span class="icon__description">Linkedin</span>
+                    </a>
+                </li>
+                <li class="section-contact__item">
+                    <a href="https://www.instagram.com/matildamared/" target="_blank" class="icon icon--light">
+                        <i class="fab fa-instagram"></i>
+                        <span class="icon__description">Instagram</span>
+                    </a>
+                </li>
+                <li class="section-contact__item">
+                    <a href="mailto:matildamared@live.se" class="icon icon--light">
+                        <i class="fas fa-envelope"></i>
+                        <span class="icon__description">Mail</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Kontaktformulär -->
+        <article class="form">
+            <form action="https://formspree.io/f/xdopjyel" method="POST">
+                <label for="name">
+                    Namn:
+                </label>
+                <input type="text" name="name" id="name" required>
+                <label for="email">
+                    Email:
+                </label>
+                    <input type="email" name="_replyto" id="email" required>
+                <label for="message">
+                    Meddelande:
+                </label>
+                <textarea name="message" id="message"></textarea>
+    
+    <!-- your other form fields go here -->
+    
+                <button type="submit">Send</button>
+            </form>
+        </article>
     </section>
     <!-- End Main Styles -->
     <!-- Footer Styles -->

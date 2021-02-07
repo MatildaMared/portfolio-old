@@ -27,24 +27,26 @@ body {
     font-weight: 800;
 
     &--light {
-        color: rgba($color-primary-light, .9);
+        color: $color-secondary;
+        color: rgba($color-secondary, .8);
     }
 }
 
 .heading-tertiary {
     text-align: center;
     font-size: 2.5rem;
-    color: rgba($color-primary-dark, .9);
+    color: rgba($color-primary-dark, .8);
     text-shadow: $shadow;
     font-weight: 800;
 
     &--light {
-        color: $color-primary-light;
+        color: rgba($color-secondary, .8);
     }
 }
 
 .text {
     font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 .tagline {
@@ -56,7 +58,7 @@ body {
 }
 
 .heading-icon {
-    margin-right: 1.5rem;
+    margin-left: .5rem;
 }
 
 .link {

@@ -4,16 +4,16 @@
     max-width: 80rem;
     position: relative;
     padding: 5rem;
-    background: $color-white;
+    background: rgba($color-white, .8);
     margin-bottom: 35px;
     box-shadow: $shadow;
     animation: moveInRight 1s;
     border-radius: .5rem;
 
-    &:after {
+    &::after {
         content: ' ';
-        border: 30px solid;
-        border-color: $color-white transparent transparent $color-white;
+        border: 20px solid;
+        border-color: rgba($color-white, .8) transparent transparent rgba($color-white, .8);
         position: absolute;
         bottom: -40px;
         left: 50px;
