@@ -1,13 +1,8 @@
 .navigation {
-    background-color: $color-primary-darkest;
+    background-color: rgba($color-primary-darkest, .9);
     width: 100%;
     position: fixed;
-    top: 0;
-    left: 0;
     z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 2rem;
 
     &__heading {
@@ -18,21 +13,103 @@
     }
 
     &__list {
-
+        text-align: right;
+        position: absolute;
+        top: 100%;
+        right: 0%;
+        list-style: none;
+        background-color: rgba($color-primary-darkest, .9);
+        width: 100%;
+        padding-bottom: 2rem;
+        transform: scale(1, 0);
+        transform-origin: top;
+        transition: transform .5s ease-in-out;
     }
 
     &__item {
-        display: inline-block;
+        // display: inline-block;
+        margin-right: 2rem;
 
         &:not(:last-child) {
-            margin-right: 2rem;
+            // margin-right: 2rem;
+            margin-bottom: 1rem;
         }
     }
 
     &__link {
         color: $color-secondary;
-        font-size: 1.3rem;
+        font-size: 1.4rem;
         text-transform: uppercase;
         text-decoration: none;
+        opacity: 0;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            color: $color-primary-light;
+        }
+    }
+
+    &__toggle {
+        display: none;
+
+        &:checked ~ .navigation__list {
+            transform: scale(1, 1);
+        }
+
+        &:checked ~ .navigation__list .navigation__link {
+            transition: all .4s ease-in-out .3s;
+            opacity: 1;
+        }
+
+        &:checked ~ .navigation__label .navigation__hamburger {
+            // opacity: 0;
+            transform: rotate(135deg);
+
+            &::before,
+            &::after {
+                top: 0;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    &__label {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 0;
+        margin-right: 2rem;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    &__hamburger {
+        transition: all .4s;
+
+        &,
+        &::before,
+        &::after {
+            background-color: $color-secondary;
+            height: 2px;
+            width: 4rem;
+            border-radius: 2px;
+            position: relative;
+        }
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+        }
+
+        &::before {
+            bottom: 1rem;
+        }
+
+        &::after {
+            top: 1rem;
+        }
     }
 }
