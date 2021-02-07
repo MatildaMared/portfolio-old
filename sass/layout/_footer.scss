@@ -1,8 +1,10 @@
 .footer {
-    background-color: $color-primary-dark;
+    background-color: rgba($color-primary-dark, .5);
     width: 100%;
     text-align: center;
     padding: 3rem;
+    position: absolute;
+    bottom: 0;
 
     &__copyright {
         color: $color-secondary;

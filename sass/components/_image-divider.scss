@@ -1,0 +1,11 @@
+.image-divider {
+    padding: 10rem;
+    max-width: $max-width;
+    margin: 0 auto;
+
+    &__img {
+        display: block;
+        margin: 0 auto;
+        width: 50%;
+    }
+}
