@@ -325,7 +325,7 @@
                 </h4>
                 <span class="section-education__details">
                     <p class="section-education__course-platform">Udemy.com</p>
-                    <p class="section-education__year">2020</p>
+                    <p class="section-education__year">2021</p>
                 </span>
                 <p class="section-education__description">
                     En kurs i avancerad CSS & Sass av Jonas Schmedtmann.
@@ -345,6 +345,33 @@
 
     <section class="section-experience">
         <h2 class="heading-secondary">Arbetslivserfarenheter</h2>
+        <div class="section-experience__experience-wrapper">
+            <article class="section-experience__experience">
+                <h4 class="section-experience__experience-heading">
+                    Stödassistent daglig verksamhet
+                </h4>
+                <span class="section-experience__details">
+                    <p class="section-experience__workplace">Halmstad Kommun</p>
+                    <p class="section-experience__year">2011-pågående</p>
+                </span>
+                <p class="section-experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit ullam at tempore a pariatur quia adipisci nam cumque non, repudiandae error laboriosam suscipit? Quisquam debitis in quam fuga laboriosam!
+                </p>
+            </article>
+            <hr class="section-experience__divider">
+            <article class="section-experience__experience">
+                <h4 class="section-experience__experience-heading">
+                    Forskningsassistent
+                </h4>
+                <span class="section-experience__details">
+                    <p class="section-experience__workplace">Högskolan i Halmstad</p>
+                    <p class="section-experience__year">2019</p>
+                </span>
+                <p class="section-experience__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit ullam at tempore a pariatur quia adipisci nam cumque non, repudiandae error laboriosam suscipit? Quisquam debitis in quam fuga laboriosam!
+                </p>
+            </article>
+        </div>
     </section>
 
     <!-- Kontakt -->
@@ -357,8 +384,26 @@
                 <span class="heading-icon">&#128105;</span>
             </h2>
             <p class="text">
-                Har du några funderingar, förslag eller helt enkelt bara vill snacka lite kod? Klicka på någon av ikonerna nedan eller använd dig av formuläret för att komma i kontakt med mig. Jag hoppas vi hörs!
+                Har du några funderingar, förslag eller du kanske helt enkelt bara vill snacka lite kod? Klicka på någon av ikonerna eller använd dig av formuläret nedan för att komma i kontakt med mig. Jag hoppas vi hörs!
             </p>
+            <!-- Kontaktformulär -->
+            <form class="form" action="https://formspree.io/f/xdopjyel" method="POST">
+                <div class="form__group">
+                    <input type="text" name="name" id="name" class="form__input" placeholder="Namn" required>
+                    <label for="name" class="form__label">Namn</label>
+                </div>
+                <div class="form__group">
+                    <input type="email" name="_replyto" id="email" placeholder="Email" class="form__input" required>
+                    <label for="email" class="form__label">Email</label>
+                </div>
+                <div class="form__group">
+                    <textarea name="message" id="message" placeholder="Meddelande" class="form__input" required></textarea>
+                    <label for="message" class="form__label">Meddelande</label>
+                </div>
+                <div class="form__group">
+                    <button type="submit" class="button">Skicka</button>
+                </div>
+            </form>
         </article>
 
         <!-- Kontakt-ikoner -->
@@ -390,28 +435,6 @@
                 </li>
             </ul>
         </nav>
-
-        <!-- Kontaktformulär -->
-        <article class="form">
-            <form action="https://formspree.io/f/xdopjyel" method="POST">
-                <label for="name">
-                    Namn:
-                </label>
-                <input type="text" name="name" id="name" required>
-                <label for="email">
-                    Email:
-                </label>
-                    <input type="email" name="_replyto" id="email" required>
-                <label for="message">
-                    Meddelande:
-                </label>
-                <textarea name="message" id="message"></textarea>
-    
-    <!-- your other form fields go here -->
-    
-                <button type="submit">Send</button>
-            </form>
-        </article>
     </section>
     <!-- End Main Styles -->
     <!-- Footer Styles -->

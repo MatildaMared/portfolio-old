@@ -35,6 +35,10 @@
     }
 
     &--light {
-        color: $color-primary-light;
+        color: rgba($color-primary-lightest, .8);
+
+        &:hover {
+            color: rgba($color-primary-light, .8);
+        }
     }
 }

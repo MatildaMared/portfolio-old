@@ -1,7 +1,11 @@
+// Introtext styles
+
 .section-welcome {
     padding-top: 10rem;
     margin: 2rem;
 }
+
+// Skills styles
 
 .section-skills {
     padding: 20rem 0;
@@ -15,6 +19,8 @@
         grid-gap: 3rem;
     }
 }
+
+// Kunskaper styles
 
 .section-knowledge {
     margin: 0 auto;
@@ -32,30 +38,6 @@
         grid-gap: 1rem;
         margin-top: 2rem;
         margin-bottom: 6rem;
-    }
-
-    &__icon {
-        margin: 0 auto;
-        line-height: 1;
-        padding: 0;
-        position: relative;
-        display: inline-block;
-        font-size: 10rem;
-        color: $color-primary;
-
-        &:hover {
-
-            & :nth-child(1) {
-                filter: blur(.4rem);
-                transition: all .3s;
-            }
-
-            & :nth-child(2) {
-                visibility: visible;
-                opacity: 1;
-                transition: all 1s;
-            }
-        }
     }
 
     &__figcaption {
@@ -88,6 +70,8 @@
     }
 }
 
+// Projekt styles
+
 .section-projects {
     width: 100%;
     display: flex;
@@ -112,6 +96,8 @@
     }
 }
 
+// Utbildningar styles
+
 .section-education {
     width: 100%;
     margin: 0 auto;
@@ -133,25 +119,29 @@
     }
 
     &__education {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
 
         &-heading {
             &:before {
                 content: "\1F393";
                 font-size: 2.5rem;
+                margin-right: .5rem;
             }
         }
     }
 
     &__course {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
 
         &-heading {
             &:before {
                 content: "\1F4C4";
                 font-size: 2.5rem;
+                margin-right: .5rem;
             }
         }
     }
@@ -184,12 +174,74 @@
     }
 }
 
-.section-experience {
+// Arbetslivserfarenheter styles
 
+.section-experience {
+    width: 100%;
+    margin: 0 auto;
+    max-width: $max-width;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem 10rem 2rem;
+
+    &__experience-wrapper {
+        margin: 4rem 0;
+        width: 100%;
+        max-width: 80rem;
+        position: relative;
+        padding: 3rem;
+        background: $color-white;
+        box-shadow: $shadow;
+        border-radius: .5rem;
+    }
+
+    &__experience {
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+
+        &-heading {
+            &:before {
+                content: "\1F4BC";
+                font-size: 2.2rem;
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    &__details {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__year,
+    &__workplace {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
+        color: $color-primary-dark;
+        font-weight: 400;
+    }
+
+    &__description {
+        padding: .5rem 0;
+    }
+
+    &__divider {
+        width: 10rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border: 1px solid $color-primary;
+    }
 }
 
+// Kontakt styles
+
 .section-contact {
-    padding: 20rem 1rem;
+    padding: 30rem 2rem 15rem 2rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -206,6 +258,13 @@
 
     &__list {
         list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+
+        @include responsive(phone) {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__item {
