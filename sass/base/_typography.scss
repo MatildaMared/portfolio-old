@@ -56,6 +56,10 @@ body {
     word-spacing: 1rem;
     color: $color-secondary;
     text-shadow: $shadow;
+
+    @include responsive(phone) {
+        display: none;
+    }
 }
 
 .heading-icon {

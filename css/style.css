@@ -157,6 +157,12 @@ body {
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
+@media (max-width: 37.5em) {
+  .tagline {
+    display: none;
+  }
+}
+
 .heading-icon {
   margin-left: .5rem;
 }
@@ -395,10 +401,6 @@ body {
   position: absolute;
   bottom: -40px;
   left: 50px;
-}
-
-.text-bubble:hover {
-  transform: rotateX(3deg);
 }
 
 .quote-divider {
