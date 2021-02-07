@@ -483,23 +483,11 @@ body {
 
 .navigation__item {
   margin-right: 2rem;
+  opacity: 0;
 }
 
 .navigation__item:not(:last-child) {
   margin-bottom: 1rem;
-}
-
-.navigation__link {
-  color: #ffd630;
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  text-decoration: none;
-  opacity: 0;
-  transition: all .2s ease-in-out;
-}
-
-.navigation__link:hover {
-  color: #E0C4F2;
 }
 
 .navigation__toggle {
@@ -510,7 +498,7 @@ body {
   transform: scale(1, 1);
 }
 
-.navigation__toggle:checked ~ .navigation__list .navigation__link {
+.navigation__toggle:checked ~ .navigation__list .navigation__item {
   transition: all .4s ease-in-out .3s;
   opacity: 1;
 }
@@ -522,6 +510,24 @@ body {
 .navigation__toggle:checked ~ .navigation__label .navigation__hamburger::before, .navigation__toggle:checked ~ .navigation__label .navigation__hamburger::after {
   top: 0;
   transform: rotate(90deg);
+}
+
+.navigation__link {
+  color: #ffd630;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.navigation__link:hover {
+  transition: all .5s;
+  color: #E0C4F2;
+}
+
+.navigation__link:hover::before {
+  content: "\1F449";
+  margin-right: .5rem;
 }
 
 .navigation__label {
@@ -749,6 +755,10 @@ body {
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
+}
+
+.section-contact__nav {
+  margin: 3rem 0;
 }
 
 .section-contact__list {

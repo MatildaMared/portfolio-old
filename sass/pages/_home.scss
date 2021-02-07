@@ -200,6 +200,10 @@
     background-attachment: fixed;
     background-size: contain;
 
+    &__nav {
+        margin: 3rem 0;
+    }
+
     &__list {
         list-style: none;
     }
