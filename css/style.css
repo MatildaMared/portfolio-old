@@ -98,7 +98,7 @@ body {
 .heading-primary {
   font-family: "Lobster", cursive;
   letter-spacing: 1px;
-  font-size: 5rem;
+  font-size: 7rem;
   color: rgba(215, 189, 218, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 400;
@@ -107,20 +107,18 @@ body {
 
 @media (max-width: 37.5em) {
   .heading-primary {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 }
 
 .heading-secondary {
   padding-bottom: 3rem;
   text-align: center;
-  letter-spacing: -1px;
   font-size: 5rem;
   color: rgba(115, 86, 152, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   font-family: "Lobster", cursive;
   font-size: 4rem;
-  letter-spacing: 1px;
 }
 
 .heading-secondary--light {
@@ -595,7 +593,7 @@ body {
 }
 
 .navigation {
-  background-color: rgba(77, 52, 122, 0.9);
+  background-color: rgba(84, 58, 134, 0.9);
   width: 100%;
   position: fixed;
   z-index: 1000;
