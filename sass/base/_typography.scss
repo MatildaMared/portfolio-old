@@ -17,6 +17,10 @@ body {
     color: rgba($color-primary-lightest, .9);
     text-shadow: $shadow;
     font-weight: 400;
+    line-height: 1.2;
+    @include responsive(phone) {
+        font-size: 3.5rem;
+    }
 }
 
 .heading-secondary {

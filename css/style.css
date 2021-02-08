@@ -101,6 +101,13 @@ body {
   color: rgba(239, 225, 248, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 400;
+  line-height: 1.2;
+}
+
+@media (max-width: 37.5em) {
+  .heading-primary {
+    font-size: 3.5rem;
+  }
 }
 
 .heading-secondary {
