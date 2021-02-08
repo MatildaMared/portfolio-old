@@ -1,5 +1,5 @@
 .project {
-    background-color: rgba($color-white, .7);
+    background-color: rgba($color-white, .8);
     backdrop-filter: blur(.6rem);
     padding: 2rem;
     animation: moveInBottom 2s;
@@ -17,10 +17,9 @@
         margin: 0 auto;
         width: 100%;
         border-radius: .5rem;
-        box-shadow: $shadow;
 
         &-portrait {
-            width: 60%;
+            width: 50%;
         }
     }
 

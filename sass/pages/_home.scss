@@ -2,6 +2,9 @@
 
 .section-welcome {
     padding-top: $gutter-medium;
+    @include responsive(tab-port) {
+        padding-top: $gutter-small;
+    }
     margin: 2rem;
 
     &__heading-img-wrapper {
@@ -32,6 +35,9 @@
 
 .section-skills {
     padding: $gutter-large 0;
+    @include responsive(tab-port) {
+        padding-top: $gutter-small;
+    }
     margin: 2rem;
 
     &__card-wrapper {
@@ -61,6 +67,9 @@
 .section-knowledge {
     margin: 0 auto;
     padding: $gutter-large 0;
+    @include responsive(tab-port) {
+        padding: $gutter-small;
+    }
     max-width: $max-width;
     display: flex;
     flex-direction: column;
@@ -116,7 +125,7 @@
     align-items: center;
     padding: $gutter-large 2rem;
     @include responsive(tab-port) {
-        // clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+        padding: $gutter-small 2rem;
     }
 
     &__projects-wrapper {
@@ -150,6 +159,9 @@
     flex-direction: column;
     align-items: center;
     padding: $gutter-large 2rem;
+    @include responsive(tab-port) {
+        padding: $gutter-small 2rem;
+    }
 
     &__education-wrapper {
         margin: 4rem 0;
@@ -228,6 +240,9 @@
     flex-direction: column;
     align-items: center;
     padding: $gutter-large 2rem;
+    @include responsive(tab-port) {
+        padding: $gutter-small 2rem;
+    }
 
     &__experience-wrapper {
         margin: 4rem 0;
@@ -297,6 +312,7 @@
     background-size: contain;
     @include responsive(tab-port) {
         clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+        padding: 15rem 2rem 10rem 2rem;
     }
 
     &__nav {

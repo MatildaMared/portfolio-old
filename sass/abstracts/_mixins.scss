@@ -5,23 +5,6 @@
     transform: translate(-50%, -50%);
 }
 
-// Media query manager
-/*
-0 - 600px:     Phone
-600 - 900px:   Tablet portrait mode
-900 - 1200px   Tablet landscape
-[1200-1800px]  Normal styling
-1800px +       Big desktop
-*/
-
-/*
-$breakpoint argument choices:
-- phone
-- tab-port
-- tab-land
-- big-desktop
-*/
-
 @mixin responsive($breakpoint) {
     @if $breakpoint == phone {
         @media (max-width: 37.5em) { @content };  //600px

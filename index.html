@@ -13,19 +13,22 @@
         <input type="checkbox" class="navigation__toggle" id="navigation__toggle">
         <ul class="navigation__list">
             <li class="navigation__item">
-                <a href="#" class="navigation__link">Hem</a>
+                <a href="#start" class="navigation__link">Start</a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">Beskrivning</a>
+                <a href="#languages" class="navigation__link">Språk & Kunskaper</a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">Språk & Kunskaper</a>
+                <a href="#projects" class="navigation__link">Projekt</a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">Projekt</a>
+                <a href="#education" class="navigation__link">Utbildning</a>
             </li>
             <li class="navigation__item">
-                <a href="#" class="navigation__link">Kontakt</a>
+                <a href="#experience" class="navigation__link">Arbetslivserfarenhet</a>
+            </li>
+            <li class="navigation__item">
+                <a href="#contact" class="navigation__link">Kontakt</a>
             </li>
         </ul>
         <label for="navigation__toggle" class="navigation__label">
@@ -44,7 +47,7 @@
 
     <!-- Welcome section -->
 
-    <section class="section-welcome">
+    <section class="section-welcome" id="start">
         <article class="text-bubble">
             <div class="section-welcome__heading-img-wrapper">
                 <img src="images/Matilda.jpg" alt="Matilda" class="section-welcome__img">
@@ -78,7 +81,7 @@
                     </span>
                     <h3 class="card__heading">Designer</h2>
                     <p class="card__text">
-                        Jdsf
+                        Jag har ett stort intresse för digital design och nördar gärna ner mig i allt från färgpsykologi till typsnittsmatchningar. Under min praktikperiod på språkvetarprogrammet fick jag dessutom chansen att ta ett steg bort från den digitala världen när jag på uppdrag av Länsstyrelsen i Halland utformade en broschyr för tryck.
                     </p>
                 </div>
             </article>
@@ -88,7 +91,9 @@
                         <i class="fas fa-laptop-code"></i>
                     </span>
                     <h3 class="card__heading">Frontendutvecklare</h2>
-                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid ipsam aspernatur quasi recusandae quos quis voluptas possimus, quia dicta facere laboriosam fugit porro minus cum consequuntur labore temporibus nemo.</p>
+                    <p class="card__text">
+                        Jag skapade min första hemsida när jag var 13 år gammal och intresset har sedan dess alltid funnits kvar som hobby. För ett par år sedan bestämde jag mig för att det var dags att ta tag i mitt intresse på allvar och nu är jag på god väg att kunna titulera mig frontendutvecklare (och CSS wizard &#128526;)!
+                    </p>
                 </div>
             </article>
             <article class="card">
@@ -97,7 +102,9 @@
                         <i class="fas fa-comments"></i>
                     </span>
                     <h3 class="card__heading">Kommunikatör</h2>
-                    <p class="card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero aliquid ipsam aspernatur quasi recusandae quos quis voluptas possimus, quia dicta facere laboriosam fugit porro minus cum consequuntur labore temporibus nemo.</p>
+                    <p class="card__text">
+                        Jag har i stort sett alltid varit intresserad av språk och kommunikation vilket gjorde att valet att påbörja en akademisk utbildning inom ämnet kändes självklart. Under min högskoleutbildning väcktes även ett djupare intresse för tillgänglighet och mottagaranpassning – för alla har rätt att förstå!
+                    </p>
                 </div>
             </article>
         </div>
@@ -114,7 +121,7 @@
 
     <!-- Kunskaper -->
 
-    <section class="section-knowledge">
+    <section class="section-knowledge" id="languages">
         <h2 class="heading-secondary">Språk & kunskaper</h2>
         <article class="section-knowledge__knowledges">
             <figure class="icon">
@@ -185,26 +192,30 @@
 
     <!-- Projekt -->
 
-    <section class="section-projects">
+    <section class="section-projects" id="projects">
         <h2 class="heading-secondary">
             Projekt
         </h2>
         <div class="section-projects__projects-wrapper">
             <article class="project">
                 <h3 class="project__heading">
-                    Projekt 1
+                    Motivational Quotes
                 </h3>
-                <img src="https://via.placeholder.com/400x300" class="project__img">
+                <img src="images/motvational-quotes.png" class="project__img">
                 <p class="project__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, voluptatum asperiores. Laborum maiores rem sunt nemo ab, quos eligendi veniam!
+                    En enkel webbplats som med hjälp av en API hämtar ett slumpmässigt inspirerande citat när användaren trycker på en knapp.
                 </p>
-                <a href="#" target="_blank" class="link-small">Länk till projektet</a>
+                <a href="https://matildamared.github.io/motivational-quotes/" target="_blank" class="link-small">Länk till projekt</a>
+                <a href="https://github.com/MatildaMared/motivational-quotes" target="_blank" class="link-small">Github</a>
                 <ul class="project__technologies-list">
                     <li class="project__technologies-item">
                         Html5
                     </li>
                     <li class="project__technologies-item">
                         CSS3
+                    </li>
+                    <li class="project__technologies-item">
+                        Javascript
                     </li>
                 </ul>
             </article>
@@ -216,49 +227,13 @@
                 <p class="project__description">
                     Under min praktikperiod på språkvetarprogrammet utformade och skrev jag, på uppdrag av Länsstyrelsen i Halland, en broschyr med information om alkohol, narkotika, dopning och tobak på lättläst svenska för nyanlända. Broschyren skapades med Adobe inDesign och finns tillgänglig både i tryck och som pdf.
                 </p>
-                <a href="https://www.lansstyrelsen.se/halland/tjanster/publikationer/202008-om-alkohol-narkotika-dopning-och-tobak-for-dig-som-ar-ny-i-sverige.html" target="_blank" class="link-small">Länk till projektet</a>
+                <a href="https://www.lansstyrelsen.se/halland/tjanster/publikationer/202008-om-alkohol-narkotika-dopning-och-tobak-for-dig-som-ar-ny-i-sverige.html" target="_blank" class="link-small">Länk till projekt</a>
                 <ul class="project__technologies-list">
                     <li class="project__technologies-item">
                         inDesign
                     </li>
                     <li class="project__technologies-item">
                         Kommunikation
-                    </li>
-                </ul>
-            </article>
-            <article class="project">
-                <h3 class="project__heading">
-                    Projekt 1
-                </h3>
-                <img src="https://via.placeholder.com/400x300" class="project__img">
-                <p class="project__description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, debitis id voluptates, ipsa tempora nam ea optio dolorum reiciendis odio recusandae quod consequuntur praesentium eos harum accusantium possimus aliquid, exercitationem iusto consectetur eveniet asperiores ex veritatis ratione. Facere iste possimus eos, quos excepturi consequatur veniam impedit, distinctio dicta libero quasi!
-                </p>
-                <a href="#" target="_blank" class="link-small">Länk till projektet</a>
-                <ul class="project__technologies-list">
-                    <li class="project__technologies-item">
-                        Html5
-                    </li>
-                    <li class="project__technologies-item">
-                        CSS3
-                    </li>
-                </ul>
-            </article>
-            <article class="project">
-                <h3 class="project__heading">
-                    Projekt 1
-                </h3>
-                <img src="https://via.placeholder.com/400x300" class="project__img">
-                <p class="project__description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam, debitis id voluptates, ipsa tempora nam ea optio dolorum reiciendis odio recusandae quod consequuntur praesentium eos harum accusantium possimus aliquid, exercitationem iusto consectetur eveniet asperiores ex veritatis ratione. Facere iste possimus eos, quos excepturi consequatur veniam impedit, distinctio dicta libero quasi!
-                </p>
-                <a href="#" target="_blank" class="link-small">Länk till projektet</a>
-                <ul class="project__technologies-list">
-                    <li class="project__technologies-item">
-                        Html5
-                    </li>
-                    <li class="project__technologies-item">
-                        CSS3
                     </li>
                 </ul>
             </article>
@@ -269,14 +244,14 @@
 
     <section class="quote-divider">
         <article class="quote-divider__wrapper">
-            <p class="quote-divider__quote">“When we strive to become better than we are, everything around us becomes better too.”</p>
-            <p class="quote-divider__author">— Paulo Coelho</p>
+            <p class="quote-divider__quote">“Whether you think you can or you think you can’t, you’re right.”</p>
+            <p class="quote-divider__author">— Henry Ford</p>
         </article>
     </section>
 
     <!-- Utbildning -->
 
-    <section class="section-education">
+    <section class="section-education" id="education">
         <h2 class="heading-secondary">Utbildning</h2>
         <div class="section-education__education-wrapper">
 
@@ -305,7 +280,7 @@
                     <p class="section-education__year">2018-2020</p>
                 </span>
                 <p class="section-education__description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus reprehenderit ullam at tempore a pariatur quia adipisci nam cumque non, repudiandae error laboriosam suscipit? Quisquam debitis in quam fuga laboriosam!
+                    Ett treårigt kandidatprogram bestående av en blandning av språk- och textvetenskapliga kurser och kurser i svenska språket. Jag valde även att fördjupa mig inom textforskning och tillgängligt myndighetsspråk och under min valbara termin studerade jag undertextning och litteraturvetenskap.
                 </p>
             </article>
             <hr class="section-education__divider">
@@ -351,7 +326,7 @@
 
     <!-- Arbetslivserfarenheter -->
 
-    <section class="section-experience">
+    <section class="section-experience" id="experience">
         <h2 class="heading-secondary">Arbetslivserfarenheter</h2>
         <div class="section-experience__experience-wrapper">
             <article class="section-experience__experience">
@@ -384,7 +359,7 @@
 
     <!-- Kontakt -->
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
         <h2 class="heading-secondary heading-secondary--light">Kontakt</h2>
         <article class="text-bubble text-bubble--dark-bg">
             <h2 class="heading-tertiary">

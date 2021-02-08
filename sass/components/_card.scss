@@ -1,5 +1,5 @@
 .card {
-    background-color: rgba($color-white, .8);
+    background-color: rgba($color-white, .85);
     backdrop-filter: blur(.6rem);
     padding: 3rem;
     animation: moveInBottom 2s;
@@ -15,7 +15,7 @@
     &__icon {
         font-size: 8rem;
         display: inline-block;
-        color: rgba($color-primary-dark, .7);
+        color: rgba($color-primary, .7);
     }
 
     &__heading {

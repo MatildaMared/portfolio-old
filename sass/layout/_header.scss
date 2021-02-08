@@ -10,9 +10,14 @@
     /* background by SVGBackgrounds.com */
     background-attachment: fixed;
     background-size: contain;
+    padding: $gutter-large 2rem;
     @include responsive(tab-port) {
-        height: 50vh;
+        height: 80vh;
         clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+        padding: $gutter-small 2rem;
+    }
+    @include responsive(phone) {
+        height: 60vh;
     }
 
     &__text-container {

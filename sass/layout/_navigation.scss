@@ -45,10 +45,12 @@
         text-transform: uppercase;
         font-weight: 400;
         text-decoration: none;
+        border: 2px solid transparent;
 
         &:hover {
             transition: all .5s;
-            color: $color-primary-light;
+            color: rgba($color-primary-light, .9);
+            border-bottom: 2px solid $color-secondary;
 
             &::before {
                 content: "\1F449";
