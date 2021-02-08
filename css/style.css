@@ -269,7 +269,7 @@ body {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #543a86;
+  color: #735698;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   margin: 1rem 0;
 }
@@ -730,7 +730,7 @@ body {
 .section-welcome__heading {
   text-align: center;
   font-size: 3rem;
-  color: rgba(84, 58, 134, 0.9);
+  color: rgba(115, 86, 152, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 800;
   line-height: 1.2;
