@@ -50,15 +50,16 @@
     }
 
     &__heading {
-        background-color: rgba($color-primary, .2);
+        background-color: rgba($color-primary-dark, .8);
         display: block;
         padding: .2rem .5rem;
         text-transform: uppercase;
         border-radius: 3px;
         font-size: 1.6rem;
         letter-spacing: 1px;
+        font-weight: 400;
         margin-bottom: 1rem;
-        color: $color-primary-dark;
+        color: $color-primary-light;
         position: relative;
     }
 }

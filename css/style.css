@@ -508,15 +508,16 @@ body {
 }
 
 .project__heading {
-  background-color: rgba(136, 80, 191, 0.2);
+  background-color: rgba(90, 55, 140, 0.8);
   display: block;
   padding: .2rem .5rem;
   text-transform: uppercase;
   border-radius: 3px;
   font-size: 1.6rem;
   letter-spacing: 1px;
+  font-weight: 400;
   margin-bottom: 1rem;
-  color: #5A378C;
+  color: #E0C4F2;
   position: relative;
 }
 
