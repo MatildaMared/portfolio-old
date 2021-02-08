@@ -121,7 +121,7 @@ body {
   font-weight: 800;
   font-family: "Lobster", cursive;
   font-size: 4rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .heading-secondary--light {
@@ -264,7 +264,7 @@ body {
 .card__icon {
   font-size: 8rem;
   display: inline-block;
-  color: rgba(162, 116, 167, 0.9);
+  color: rgba(84, 58, 134, 0.8);
 }
 
 .card__heading {
@@ -595,7 +595,7 @@ body {
 }
 
 .navigation {
-  background-color: rgba(69, 47, 110, 0.9);
+  background-color: rgba(77, 52, 122, 0.9);
   width: 100%;
   position: fixed;
   z-index: 1000;
@@ -603,10 +603,10 @@ body {
 }
 
 .navigation__heading {
-  color: #E9D698;
+  color: rgba(233, 214, 152, 0.9);
   font-family: "Lobster", cursive;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .navigation__list {
@@ -615,7 +615,7 @@ body {
   top: 100%;
   right: 0%;
   list-style: none;
-  background-color: rgba(69, 47, 110, 0.9);
+  background-color: rgba(77, 52, 122, 0.9);
   width: 100%;
   padding-bottom: 2rem;
   transform: scale(1, 0);
