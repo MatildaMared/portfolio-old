@@ -8,9 +8,6 @@ $color-primary-darkest: #392259;
 // $color-secondary: #ffe552dd;
 $color-secondary: #ffd630;
 
-$color-tertiary-light: #2998ff;
-$color-tertiary-dark: #5643fa;
-
 $color-grey-light: #eee;
 $color-grey: #777;
 $color-grey-dark: #333;
@@ -29,3 +26,8 @@ $default-font-size: 1.6rem;
 
 //Shadow
 $shadow: 0 .5rem 1rem rgba($color-black, .1);
+
+//Gutters
+$gutter-large: 20rem;
+$gutter-medium: 15rem;
+$gutter-small: 10rem;

@@ -13,6 +13,7 @@ $breakpoint argument choices:
 - big-desktop
 */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 *,
 *::before,
 *::after {
@@ -27,7 +28,7 @@ html {
 
 @media (min-width: 112.5em) {
   html {
-    font-size: 75%;
+    font-size: 68.75%;
   }
 }
 
@@ -147,6 +148,7 @@ body {
 .text {
   font-size: 1.6rem;
   line-height: 1.5;
+  padding: .5rem;
 }
 
 .tagline {
@@ -165,6 +167,13 @@ body {
 
 .heading-icon {
   margin-left: .5rem;
+}
+
+.name {
+  color: #8850BF;
+  font-family: 'Indie Flower', cursive;
+  text-align: right;
+  font-size: 3.5rem;
 }
 
 .link {
@@ -236,37 +245,37 @@ body {
 }
 
 .card {
-  filter: drop-shadow(0 0.5rem 1rem rgba(25, 15, 38, 0.3));
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(0.6rem);
+  padding: 3rem;
+  animation: moveInBottom 2s;
+  border-radius: .5rem;
   transition: all .3s;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
 .card__content {
-  padding: 3rem;
   text-align: center;
-  background-image: url("../images/background.svg");
-  /* background by SVGBackgrounds.com */
-  background-attachment: fixed;
-  background-size: contain;
   border-radius: .5rem;
 }
 
 .card__icon {
   font-size: 8rem;
   display: inline-block;
-  background-image: linear-gradient(to right, #8850BF, #ffd630);
-  -webkit-background-clip: text;
-  color: transparent;
+  color: rgba(90, 55, 140, 0.7);
 }
 
 .card__heading {
-  font-size: 2.5rem;
-  color: #E0C4F2;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #5a378c;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  margin: 1rem 0;
 }
 
 .card__text {
   text-align: left;
-  color: rgba(239, 225, 248, 0.8);
 }
 
 .card:hover {
@@ -370,7 +379,6 @@ body {
 }
 
 .image-divider {
-  padding: 10rem;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -418,6 +426,13 @@ body {
   padding: 20rem 0;
 }
 
+@media (max-width: 56.25em) {
+  .quote-divider {
+    height: 50vh;
+    clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
+  }
+}
+
 .quote-divider__wrapper {
   max-width: 60rem;
   padding: 2rem;
@@ -449,11 +464,20 @@ body {
 }
 
 .project__description {
+  margin-top: 1rem;
   margin-bottom: .5rem;
 }
 
 .project__img {
+  display: block;
+  margin: 0 auto;
   width: 100%;
+  border-radius: .5rem;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+}
+
+.project__img-portrait {
+  width: 60%;
 }
 
 .project__technologies-list {
@@ -484,18 +508,16 @@ body {
 }
 
 .project__heading {
-  display: inline-block;
+  background-color: rgba(136, 80, 191, 0.2);
+  display: block;
+  padding: .2rem .5rem;
   text-transform: uppercase;
-  font-size: 1.4rem;
+  border-radius: 3px;
+  font-size: 1.6rem;
   letter-spacing: 1px;
   margin-bottom: 1rem;
   color: #5A378C;
   position: relative;
-}
-
-.project__heading:before {
-  font-size: 2rem;
-  content: "\2B50";
 }
 
 .header {
@@ -510,6 +532,13 @@ body {
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
+}
+
+@media (max-width: 56.25em) {
+  .header {
+    height: 50vh;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 0% 100%);
+  }
 }
 
 .header__text-container {
@@ -669,8 +698,31 @@ body {
 }
 
 .section-welcome {
-  padding-top: 10rem;
+  padding-top: 15rem;
   margin: 2rem;
+}
+
+.section-welcome__heading-img-wrapper {
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.section-welcome__heading {
+  text-align: center;
+  font-size: 3rem;
+  color: rgba(90, 55, 140, 0.9);
+  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  font-weight: 800;
+}
+
+.section-welcome__img {
+  display: block;
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 1rem;
 }
 
 .section-skills {
@@ -679,16 +731,32 @@ body {
 }
 
 .section-skills__card-wrapper {
-  margin: 0 auto;
+  padding: 3rem;
+  width: 100%;
   max-width: 120rem;
+  border-radius: .5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   grid-gap: 3rem;
+  background-image: url("../images/background.svg");
+  /* background by SVGBackgrounds.com */
+  background-attachment: fixed;
+  background-size: contain;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  margin: 0 auto;
+}
+
+@media (max-width: 56.25em) {
+  .section-skills__card-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 60rem;
+  }
 }
 
 .section-knowledge {
   margin: 0 auto;
-  padding: 10rem 0;
+  padding: 20rem 0;
   max-width: 120rem;
   display: flex;
   flex-direction: column;
@@ -740,22 +808,30 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
+  padding: 20rem 2rem;
+}
+
+.section-projects__projects-wrapper {
+  padding: 3rem;
+  width: 100%;
+  max-width: 120rem;
+  border-radius: .5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 3rem;
   background-image: url("../images/background.svg");
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
-  padding: 25rem 0;
+  box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
-.section-projects__projects-wrapper {
-  padding: 2rem;
-  width: 100%;
-  max-width: 120rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-gap: 3rem;
+@media (max-width: 56.25em) {
+  .section-projects__projects-wrapper {
+    grid-template-columns: 1fr;
+    max-width: 60rem;
+  }
 }
 
 .section-education {
@@ -765,7 +841,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem;
+  padding: 20rem 2rem;
 }
 
 .section-education__education-wrapper {
@@ -831,7 +907,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem 2rem 10rem 2rem;
+  padding: 20rem 2rem;
 }
 
 .section-experience__experience-wrapper {
@@ -891,6 +967,12 @@ body {
   /* background by SVGBackgrounds.com */
   background-attachment: fixed;
   background-size: contain;
+}
+
+@media (max-width: 56.25em) {
+  .section-contact {
+    clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+  }
 }
 
 .section-contact__nav {

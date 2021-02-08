@@ -11,6 +11,10 @@
     background-attachment: fixed;
     background-size: contain;
     padding: 20rem 0;
+    @include responsive(tab-port) {
+        height: 50vh;
+        clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
+    }
 
     &__wrapper {
         max-width: 60rem;

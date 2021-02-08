@@ -1,34 +1,34 @@
 .card {
-    filter: drop-shadow(0 .5rem 1rem rgba($color-black, .3));
+    background-color: rgba($color-white, .8);
+    backdrop-filter: blur(.6rem);
+    padding: 3rem;
+    animation: moveInBottom 2s;
+    border-radius: .5rem;
     transition: all .3s;
+    box-shadow: $shadow;
 
     &__content {
-        padding: 3rem;
         text-align: center;
-        background-image: url("../images/background.svg");
-        /* background by SVGBackgrounds.com */
-        background-attachment: fixed;
-        background-size: contain;
         border-radius: .5rem;
     }
 
     &__icon {
         font-size: 8rem;
         display: inline-block;
-        background-image: linear-gradient(to right, $color-primary, $color-secondary);
-        -webkit-background-clip: text;
-        color: transparent;
+        color: rgba($color-primary-dark, .7);
     }
 
     &__heading {
-        font-size: 2.5rem;
-        color: $color-primary-light;
+        font-size: 1.8rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: rgba($color-primary-dark, 1);
         text-shadow: $shadow;
+        margin: 1rem 0;
     }
 
     &__text {
         text-align: left;
-        color: rgba($color-primary-lightest, .8);
     }
 
     &:hover {

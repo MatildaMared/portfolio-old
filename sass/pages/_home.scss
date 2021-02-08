@@ -1,22 +1,58 @@
 // Introtext styles
 
 .section-welcome {
-    padding-top: 10rem;
+    padding-top: $gutter-medium;
     margin: 2rem;
+
+    &__heading-img-wrapper {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__heading {
+        text-align: center;
+        font-size: 3rem;
+        color: rgba($color-primary-dark, .9);
+        text-shadow: $shadow;
+        font-weight: 800;
+    }
+
+    &__img {
+        display: block;
+        border-radius: 50%;
+        width: 10rem;
+        height: 10rem;
+        margin-right: 1rem;
+    }
 }
 
 // Skills styles
 
 .section-skills {
-    padding: 20rem 0;
+    padding: $gutter-large 0;
     margin: 2rem;
 
     &__card-wrapper {
-        margin: 0 auto;
+        padding: 3rem;
+        width: 100%;
         max-width: $max-width;
+        border-radius: .5rem;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
         grid-gap: 3rem;
+        background-image: url("../images/background.svg");
+        /* background by SVGBackgrounds.com */
+        background-attachment: fixed;
+        background-size: contain;
+        box-shadow: $shadow;
+        margin: 0 auto;
+        @include responsive(tab-port) {
+            grid-template-columns: 1fr;
+            max-width: 60rem;
+        }
     }
 }
 
@@ -24,7 +60,7 @@
 
 .section-knowledge {
     margin: 0 auto;
-    padding: 10rem 0;
+    padding: $gutter-large 0;
     max-width: $max-width;
     display: flex;
     flex-direction: column;
@@ -78,21 +114,29 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    clip-path: polygon(0% 10%, 100% 0, 100% 90%, 0% 100%);
-    background-image: url("../images/background.svg");
-    /* background by SVGBackgrounds.com */
-    background-attachment: fixed;
-    background-size: contain;
-    padding: 25rem 0;
+    padding: $gutter-large 2rem;
+    @include responsive(tab-port) {
+        // clip-path: polygon(0% 5%, 100% 0, 100% 95%, 0% 100%);
+    }
 
     &__projects-wrapper {
-        padding: 2rem;
+        padding: 3rem;
         width: 100%;
         max-width: $max-width;
+        border-radius: .5rem;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 3rem;
+        background-image: url("../images/background.svg");
+        /* background by SVGBackgrounds.com */
+        background-attachment: fixed;
+        background-size: contain;
+        box-shadow: $shadow;
+        @include responsive(tab-port) {
+            grid-template-columns: 1fr;
+            max-width: 60rem;
+        }
     }
 }
 
@@ -105,7 +149,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
+    padding: $gutter-large 2rem;
 
     &__education-wrapper {
         margin: 4rem 0;
@@ -183,7 +227,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2rem 2rem 10rem 2rem;
+    padding: $gutter-large 2rem;
 
     &__experience-wrapper {
         margin: 4rem 0;
@@ -251,6 +295,9 @@
     /* background by SVGBackgrounds.com */
     background-attachment: fixed;
     background-size: contain;
+    @include responsive(tab-port) {
+        clip-path: polygon(0% 10%, 100% 0, 100% 100%, 0% 100%);
+    }
 
     &__nav {
         margin: 3rem 0;

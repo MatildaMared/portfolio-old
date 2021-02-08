@@ -8,11 +8,20 @@
     box-shadow: $shadow;
 
     &__description {
+        margin-top: 1rem;
         margin-bottom: .5rem;
     }
 
     &__img {
+        display: block;
+        margin: 0 auto;
         width: 100%;
+        border-radius: .5rem;
+        box-shadow: $shadow;
+
+        &-portrait {
+            width: 60%;
+        }
     }
 
     &__technologies-list {
@@ -41,17 +50,15 @@
     }
 
     &__heading {
-        display: inline-block;
+        background-color: rgba($color-primary, .2);
+        display: block;
+        padding: .2rem .5rem;
         text-transform: uppercase;
-        font-size: 1.4rem;
+        border-radius: 3px;
+        font-size: 1.6rem;
         letter-spacing: 1px;
         margin-bottom: 1rem;
         color: $color-primary-dark;
         position: relative;
-
-        &:before {
-            font-size: 2rem;
-            content: "\2B50";
-        }
     }
 }
