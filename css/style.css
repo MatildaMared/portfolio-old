@@ -770,7 +770,7 @@ body {
 
 .section-knowledge {
   margin: 0 auto;
-  padding: 20rem 0;
+  padding: 20rem 2rem;
   max-width: 120rem;
   display: flex;
   flex-direction: column;
@@ -780,7 +780,7 @@ body {
 
 @media (max-width: 56.25em) {
   .section-knowledge {
-    padding: 10rem;
+    padding: 10rem 2rem;
   }
 }
 

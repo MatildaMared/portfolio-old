@@ -66,9 +66,9 @@
 
 .section-knowledge {
     margin: 0 auto;
-    padding: $gutter-large 0;
+    padding: $gutter-large 2rem;
     @include responsive(tab-port) {
-        padding: $gutter-small;
+        padding: $gutter-small 2rem;
     }
     max-width: $max-width;
     display: flex;
