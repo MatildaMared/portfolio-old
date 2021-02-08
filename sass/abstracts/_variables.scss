@@ -1,12 +1,11 @@
 // Colors
-$color-primary: #8850BF;
-$color-primary-light: #E0C4F2;
-$color-primary-lightest: lighten($color-primary-light, 7);
-$color-primary-dark: #5A378C;
-$color-primary-darkest: #392259;
+$color-primary: #735698;
+$color-primary-light: #A274A7;
+$color-primary-lightest: #d7bdda;
+$color-primary-dark: #543A86;
+$color-primary-darkest: #452f6e;
 
-// $color-secondary: #ffe552dd;
-$color-secondary: #ffd630;
+$color-secondary: #E9D698;
 
 $color-grey-light: #eee;
 $color-grey: #777;
@@ -19,7 +18,8 @@ $max-width: 120rem;
 
 // Fonts
 $font-primary: 'Lato', sans-serif;
-$font-secondary: 'Libre Baskerville', serif;
+$font-secondary: 'Lobster', cursive;
+// $font-secondary: 'Libre Baskerville', serif;
 
 // Font sizes
 $default-font-size: 1.6rem;
@@ -31,3 +31,12 @@ $shadow: 0 .5rem 1rem rgba($color-black, .1);
 $gutter-large: 20rem;
 $gutter-medium: 15rem;
 $gutter-small: 10rem;
+
+// $color-primary: #8850BF;
+// $color-primary-light: #E0C4F2;
+// $color-primary-lightest: lighten($color-primary-light, 7);
+// $color-primary-dark: #5A378C;
+// $color-primary-darkest: #392259;
+
+// // $color-secondary: #ffe552dd;
+// $color-secondary: #ffd630;

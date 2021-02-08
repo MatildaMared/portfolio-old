@@ -1,6 +1,11 @@
+// Primary font
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Libre+Baskerville:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+// Secondary font
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+// Handwriting font
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 body {
     font-family: $font-primary;
@@ -27,14 +32,22 @@ body {
     padding-bottom: 3rem;
     text-align: center;
     letter-spacing: -1px;
-    font-size: 3.5rem;
-    color: rgba($color-primary-dark, .9);
-    text-shadow: $shadow;
+    font-size: 5rem;
+    color: rgba($color-primary, .9);
+    text-shadow: 0 .5rem 1rem rgba($color-black, .2);
     font-weight: 800;
+    font-family: $font-secondary;
+    font-size: 4rem;
+    letter-spacing: 2px;
 
     &--light {
-        color: $color-secondary;
-        color: rgba($color-secondary, .8);
+        color: rgba($color-secondary, .9);
+    }
+
+    &--non-cursive {
+        font-family: $font-primary;
+        font-size: 3rem;
+        letter-spacing: 0px;
     }
 }
 

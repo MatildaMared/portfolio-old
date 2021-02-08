@@ -3,12 +3,12 @@
     width: 100%;
     position: fixed;
     z-index: 1000;
-    padding: 2rem;
+    padding: 1rem;
 
     &__heading {
         color: $color-secondary;
-        text-transform: uppercase;
-        font-weight: 400;
+        font-family: $font-secondary;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
         letter-spacing: 2px;
     }
 
@@ -105,7 +105,7 @@
         &::after {
             background-color: $color-secondary;
             height: 2px;
-            width: 4rem;
+            width: 3rem;
             border-radius: 2px;
             position: relative;
         }
@@ -117,11 +117,11 @@
         }
 
         &::before {
-            bottom: 1rem;
+            bottom: .7rem;
         }
 
         &::after {
-            top: 1rem;
+            top: .7rem;
         }
     }
 }

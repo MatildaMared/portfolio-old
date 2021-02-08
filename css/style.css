@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Libre+Baskerville:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
 *,
 *::before,
@@ -32,7 +33,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #efe1f8;
+  background-color: #ebe1ec;
   position: relative;
 }
 
@@ -95,10 +96,10 @@ body {
 }
 
 .heading-primary {
-  font-family: "Libre Baskerville", serif;
+  font-family: "Lobster", cursive;
   letter-spacing: 1px;
   font-size: 5rem;
-  color: rgba(239, 225, 248, 0.9);
+  color: rgba(215, 189, 218, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 400;
   line-height: 1.2;
@@ -114,28 +115,36 @@ body {
   padding-bottom: 3rem;
   text-align: center;
   letter-spacing: -1px;
-  font-size: 3.5rem;
-  color: rgba(90, 55, 140, 0.9);
-  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  font-size: 5rem;
+  color: rgba(115, 86, 152, 0.9);
+  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   font-weight: 800;
+  font-family: "Lobster", cursive;
+  font-size: 4rem;
+  letter-spacing: 2px;
 }
 
 .heading-secondary--light {
-  color: #ffd630;
-  color: rgba(255, 214, 48, 0.8);
+  color: rgba(233, 214, 152, 0.9);
+}
+
+.heading-secondary--non-cursive {
+  font-family: "Lato", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0px;
 }
 
 .heading-tertiary {
   text-align: center;
   font-size: 2.5rem;
-  color: rgba(90, 55, 140, 0.8);
+  color: rgba(84, 58, 134, 0.8);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 800;
   margin-bottom: 1rem;
 }
 
 .heading-tertiary--light {
-  color: rgba(255, 214, 48, 0.8);
+  color: rgba(233, 214, 152, 0.8);
 }
 
 .text {
@@ -148,7 +157,7 @@ body {
   text-transform: uppercase;
   letter-spacing: -.04rem;
   word-spacing: 1rem;
-  color: #ffd630;
+  color: #E9D698;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
@@ -163,7 +172,7 @@ body {
 }
 
 .name {
-  color: #8850BF;
+  color: #735698;
   font-family: 'Indie Flower', cursive;
   text-align: right;
   font-size: 3.5rem;
@@ -176,7 +185,7 @@ body {
 .link-small {
   transition: all .3s;
   text-align: right;
-  color: #8850BF;
+  color: #735698;
   text-decoration: none;
   padding: .5rem;
 }
@@ -187,7 +196,7 @@ body {
 }
 
 .link-small:hover {
-  background-color: #8850BF;
+  background-color: #735698;
   color: #FFF;
   box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   border-radius: .5rem;
@@ -202,8 +211,8 @@ body {
   display: inline-block;
   border-radius: .5rem;
   transition: all .2s;
-  background-color: rgba(90, 55, 140, 0.8);
-  color: #efe1f8;
+  background-color: rgba(84, 58, 134, 0.8);
+  color: #d7bdda;
   border: none;
   cursor: pointer;
 }
@@ -211,7 +220,7 @@ body {
 .button:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(25, 15, 38, 0.2);
-  background-color: #8850bf;
+  background-color: #735698;
 }
 
 .button:hover::after {
@@ -255,14 +264,14 @@ body {
 .card__icon {
   font-size: 8rem;
   display: inline-block;
-  color: rgba(136, 80, 191, 0.7);
+  color: rgba(162, 116, 167, 0.9);
 }
 
 .card__heading {
   font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #5a378c;
+  color: #543a86;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   margin: 1rem 0;
 }
@@ -305,11 +314,11 @@ body {
 .form__input:focus {
   outline: none;
   box-shadow: 0 1rem 2rem rgba(25, 15, 38, 0.1);
-  border-bottom: 3px solid #8850BF;
+  border-bottom: 3px solid #735698;
 }
 
 .form__input:focus:invalid {
-  border-bottom: 3px solid #ffd630;
+  border-bottom: 3px solid #E9D698;
 }
 
 .form__label {
@@ -333,7 +342,7 @@ body {
   position: relative;
   display: inline-block;
   font-size: 10rem;
-  color: #8850BF;
+  color: #735698;
 }
 
 .icon:hover :nth-child(1) {
@@ -364,11 +373,11 @@ body {
 }
 
 .icon--light {
-  color: rgba(239, 225, 248, 0.8);
+  color: rgba(215, 189, 218, 0.7);
 }
 
 .icon--light:hover {
-  color: rgba(224, 196, 242, 0.8);
+  color: rgba(162, 116, 167, 0.8);
 }
 
 .image-divider {
@@ -380,6 +389,9 @@ body {
   display: block;
   margin: 0 auto;
   width: 50%;
+  max-width: 40rem;
+  margin-top: -5rem;
+  margin-bottom: -5rem;
 }
 
 .text-bubble {
@@ -431,8 +443,8 @@ body {
 }
 
 .quote-divider__quote {
-  font-family: "Libre Baskerville", serif;
-  color: rgba(239, 225, 248, 0.9);
+  font-family: "Lobster", cursive;
+  color: rgba(215, 189, 218, 0.9);
   font-size: 3rem;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   line-height: 1.3;
@@ -441,7 +453,7 @@ body {
 .quote-divider__author {
   text-align: right;
   font-size: 1.8rem;
-  color: #ffd630;
+  color: #E9D698;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
@@ -477,7 +489,7 @@ body {
 }
 
 .project__technologies-item {
-  color: #5A378C;
+  color: #543A86;
   display: inline-block;
   text-transform: uppercase;
   letter-spacing: .07rem;
@@ -499,7 +511,7 @@ body {
 }
 
 .project__heading {
-  background-color: rgba(90, 55, 140, 0.8);
+  background-color: rgba(84, 58, 134, 0.8);
   display: block;
   padding: .2rem .5rem;
   text-transform: uppercase;
@@ -508,7 +520,7 @@ body {
   letter-spacing: 1px;
   font-weight: 400;
   margin-bottom: 1rem;
-  color: #E0C4F2;
+  color: rgba(215, 189, 218, 0.9);
   position: relative;
 }
 
@@ -566,7 +578,7 @@ body {
 }
 
 .footer {
-  background-color: rgba(90, 55, 140, 0.5);
+  background-color: rgba(84, 58, 134, 0.5);
   width: 100%;
   text-align: center;
   padding: 3rem;
@@ -575,7 +587,7 @@ body {
 }
 
 .footer__copyright {
-  color: #ffd630;
+  color: #E9D698;
   text-transform: uppercase;
   font-weight: 400;
   letter-spacing: 2px;
@@ -583,17 +595,17 @@ body {
 }
 
 .navigation {
-  background-color: rgba(57, 34, 89, 0.9);
+  background-color: rgba(69, 47, 110, 0.9);
   width: 100%;
   position: fixed;
   z-index: 1000;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .navigation__heading {
-  color: #ffd630;
-  text-transform: uppercase;
-  font-weight: 400;
+  color: #E9D698;
+  font-family: "Lobster", cursive;
+  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   letter-spacing: 2px;
 }
 
@@ -603,7 +615,7 @@ body {
   top: 100%;
   right: 0%;
   list-style: none;
-  background-color: rgba(57, 34, 89, 0.9);
+  background-color: rgba(69, 47, 110, 0.9);
   width: 100%;
   padding-bottom: 2rem;
   transform: scale(1, 0);
@@ -621,7 +633,7 @@ body {
 }
 
 .navigation__link {
-  color: #ffd630;
+  color: #E9D698;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -631,8 +643,8 @@ body {
 
 .navigation__link:hover {
   transition: all .5s;
-  color: rgba(224, 196, 242, 0.9);
-  border-bottom: 2px solid #ffd630;
+  color: rgba(162, 116, 167, 0.9);
+  border-bottom: 2px solid #E9D698;
 }
 
 .navigation__link:hover::before {
@@ -679,9 +691,9 @@ body {
 }
 
 .navigation__hamburger, .navigation__hamburger::before, .navigation__hamburger::after {
-  background-color: #ffd630;
+  background-color: #E9D698;
   height: 2px;
-  width: 4rem;
+  width: 3rem;
   border-radius: 2px;
   position: relative;
 }
@@ -692,11 +704,11 @@ body {
 }
 
 .navigation__hamburger::before {
-  bottom: 1rem;
+  bottom: .7rem;
 }
 
 .navigation__hamburger::after {
-  top: 1rem;
+  top: .7rem;
 }
 
 .section-welcome {
@@ -720,7 +732,7 @@ body {
 .section-welcome__heading {
   text-align: center;
   font-size: 3rem;
-  color: rgba(90, 55, 140, 0.9);
+  color: rgba(84, 58, 134, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 800;
 }
@@ -916,7 +928,7 @@ body {
   text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 1px;
-  color: #5A378C;
+  color: #543A86;
   font-weight: 400;
 }
 
@@ -929,7 +941,7 @@ body {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 1px solid #8850BF;
+  border: 1px solid #735698;
 }
 
 .section-experience {
@@ -978,7 +990,7 @@ body {
   text-transform: uppercase;
   font-size: 1.3rem;
   letter-spacing: 1px;
-  color: #5A378C;
+  color: #543A86;
   font-weight: 400;
 }
 
@@ -991,7 +1003,7 @@ body {
   margin: 0 auto;
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 1px solid #8850BF;
+  border: 1px solid #735698;
 }
 
 .section-contact {
