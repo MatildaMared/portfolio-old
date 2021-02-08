@@ -35,7 +35,6 @@ body {
     font-size: 5rem;
     color: rgba($color-primary, .9);
     text-shadow: 0 .5rem 1rem rgba($color-black, .2);
-    font-weight: 800;
     font-family: $font-secondary;
     font-size: 4rem;
     letter-spacing: 1px;
@@ -45,6 +44,7 @@ body {
     }
 
     &--non-cursive {
+        font-weight: 800;
         font-family: $font-primary;
         font-size: 3rem;
         letter-spacing: 0px;
