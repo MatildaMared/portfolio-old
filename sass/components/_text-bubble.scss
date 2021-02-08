@@ -9,6 +9,9 @@
     box-shadow: $shadow;
     animation: moveInRight 1s;
     border-radius: .5rem;
+    @include responsive(phone) {
+        padding: 2rem;
+    }
 
     &::after {
         content: ' ';

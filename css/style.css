@@ -125,6 +125,10 @@ body {
   color: rgba(233, 214, 152, 0.9);
 }
 
+.heading-secondary--no-padding {
+  padding: 0;
+}
+
 .heading-secondary--non-cursive {
   font-weight: 800;
   font-family: "Lato", sans-serif;
@@ -245,7 +249,7 @@ body {
 }
 
 .card {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(0.6rem);
   padding: 3rem;
   animation: moveInBottom 2s;
@@ -279,7 +283,7 @@ body {
 }
 
 .card:hover {
-  transform: translateY(-1.5rem) scale(1.05);
+  transform: translateY(-1.5rem);
   filter: drop-shadow(0 0.7rem 1.5rem rgba(25, 15, 38, 0.3));
 }
 
@@ -405,6 +409,12 @@ body {
   border-radius: .5rem;
 }
 
+@media (max-width: 37.5em) {
+  .text-bubble {
+    padding: 2rem;
+  }
+}
+
 .text-bubble::after {
   content: ' ';
   border: 20px solid;
@@ -456,7 +466,7 @@ body {
 }
 
 .project {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(0.6rem);
   padding: 2rem;
   animation: moveInBottom 2s;
@@ -504,7 +514,7 @@ body {
 }
 
 .project:hover {
-  transform: translateY(-1.5rem) scale(1.05);
+  transform: translateY(-1.5rem);
   filter: drop-shadow(0 0.7rem 1.5rem rgba(25, 15, 38, 0.3));
 }
 
@@ -604,7 +614,7 @@ body {
   color: rgba(233, 214, 152, 0.9);
   font-family: "Lobster", cursive;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
 }
 
 .navigation__list {
@@ -733,12 +743,12 @@ body {
   color: rgba(115, 86, 152, 0.9);
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
   font-weight: 800;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 @media (max-width: 37.5em) {
   .section-welcome__heading {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -782,6 +792,16 @@ body {
   .section-skills__card-wrapper {
     grid-template-columns: 1fr;
     max-width: 60rem;
+  }
+}
+
+.section-skills__card-wrapper > :first-child {
+  grid-column: span 3;
+}
+
+@media (max-width: 56.25em) {
+  .section-skills__card-wrapper > :first-child {
+    grid-column: span 1;
   }
 }
 
@@ -845,12 +865,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20rem 2rem;
+  padding: 2rem 2rem 20rem 2rem;
 }
 
 @media (max-width: 56.25em) {
   .section-projects {
-    padding: 10rem 2rem;
+    padding: 2rem 2rem 10rem 2rem;
   }
 }
 
@@ -874,6 +894,16 @@ body {
   .section-projects__projects-wrapper {
     grid-template-columns: 1fr;
     max-width: 60rem;
+  }
+}
+
+.section-projects__projects-wrapper > :first-child {
+  grid-column: span 2;
+}
+
+@media (max-width: 56.25em) {
+  .section-projects__projects-wrapper > :first-child {
+    grid-column: span 1;
   }
 }
 
