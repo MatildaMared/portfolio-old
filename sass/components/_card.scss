@@ -15,15 +15,16 @@
     &__icon {
         font-size: 8rem;
         display: inline-block;
-        color: rgba($color-primary-dark, .8);
+        color: rgba($color-primary, .9);
     }
 
     &__heading {
         font-size: 1.8rem;
         text-transform: uppercase;
+        font-weight: 300;
         letter-spacing: 2px;
         color: rgba($color-primary, 1);
-        text-shadow: $shadow;
+        text-shadow: 0 .5rem 1rem rgba($color-black, .2);
         margin: 1rem 0;
     }
 

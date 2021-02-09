@@ -208,13 +208,15 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
   padding: 1.5rem 4rem;
   display: inline-block;
   border-radius: .5rem;
   transition: all .2s;
-  background-color: rgba(84, 58, 134, 0.8);
-  color: #d7bdda;
+  background-color: rgba(115, 86, 152, 0.9);
+  color: #E9D698;
   border: none;
   cursor: pointer;
 }
@@ -222,7 +224,7 @@ body {
 .button:hover {
   transform: translateY(-0.3rem);
   box-shadow: 0 1rem 2rem rgba(25, 15, 38, 0.2);
-  background-color: #735698;
+  background-color: rgba(162, 116, 167, 0.8);
 }
 
 .button:hover::after {
@@ -266,15 +268,16 @@ body {
 .card__icon {
   font-size: 8rem;
   display: inline-block;
-  color: rgba(84, 58, 134, 0.8);
+  color: rgba(115, 86, 152, 0.9);
 }
 
 .card__heading {
   font-size: 1.8rem;
   text-transform: uppercase;
+  font-weight: 300;
   letter-spacing: 2px;
   color: #735698;
-  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
+  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   margin: 1rem 0;
 }
 
@@ -519,16 +522,17 @@ body {
 }
 
 .project__heading {
-  background-color: rgba(84, 58, 134, 0.8);
+  background-color: rgba(115, 86, 152, 0.8);
   display: block;
   padding: .2rem .5rem;
   text-transform: uppercase;
   border-radius: 3px;
   font-size: 1.6rem;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 1rem;
-  color: rgba(215, 189, 218, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   position: relative;
 }
 
@@ -597,9 +601,9 @@ body {
 .footer__copyright {
   color: #E9D698;
   text-transform: uppercase;
-  font-weight: 400;
+  font-weight: 300;
   letter-spacing: 2px;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 .navigation {
@@ -938,10 +942,18 @@ body {
   margin-bottom: 2rem;
 }
 
+.section-education__education-heading {
+  font-size: 1.8rem;
+}
+
 .section-education__education-heading:before {
   content: "\1F393";
   font-size: 2.5rem;
   margin-right: .5rem;
+}
+
+.section-education__course {
+  font-size: 1.8rem;
 }
 
 .section-education__course:not(:last-child) {
@@ -961,10 +973,10 @@ body {
 
 .section-education__year, .section-education__school, .section-education__course-platform {
   text-transform: uppercase;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
+  letter-spacing: .07rem;
   color: #543A86;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .section-education__description {
@@ -1023,10 +1035,10 @@ body {
 
 .section-experience__year, .section-experience__workplace {
   text-transform: uppercase;
-  font-size: 1.3rem;
-  letter-spacing: 1px;
+  font-size: 1.4rem;
+  letter-spacing: .07rem;
   color: #543A86;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .section-experience__description {
