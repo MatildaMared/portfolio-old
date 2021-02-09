@@ -4,17 +4,17 @@ Create a portfolio site in HTML and CSS, with grid/flexbox, semantic HTML tags a
 
 ## Planning
 ### Color palette
-Primary color: #735698;
-Primary color light: #A274A7;
-Primary color lightest: #d7bdda;
-Primary color dark: #543A86;
-Primary color darkest: #4d347a;
-Secondary color: #E9D698;
+* Primary color: #735698
+* Primary color light: #A274A7
+* Primary color lightest: #d7bdda
+* Primary color dark: #543A86
+* Primary color darkest: #4d347a
+* Secondary color: #E9D698
 
 ### Fonts
-Primary font: Lato
-Secondary font: Lobster
-Handwriting font: Indie flower
+* Primary font: Lato
+* Secondary font: Lobster
+* Handwriting font: Indie flower
 
 ## Structure
 ### Navigation-bar
