@@ -408,7 +408,7 @@ body {
   outline: none;
   -webkit-box-shadow: 0 1rem 2rem rgba(25, 15, 38, 0.1);
           box-shadow: 0 1rem 2rem rgba(25, 15, 38, 0.1);
-  border-bottom: 3px solid #735698;
+  border-bottom: 2px solid #735698;
 }
 
 .form__input:focus:invalid {
@@ -1322,3 +1322,4 @@ body {
   display: inline-block;
   padding: 1rem;
 }
+/*# sourceMappingURL=style.css.map */
