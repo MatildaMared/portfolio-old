@@ -7,15 +7,12 @@
     transition: all .3s;
     box-shadow: $shadow;
 
-    &__content {
-        text-align: center;
-        border-radius: .5rem;
-    }
-
     &__icon {
         font-size: 8rem;
-        display: inline-block;
+        display: flex;
+        justify-content: center;
         color: rgba($color-primary, .9);
+        padding: 2rem;
     }
 
     &__heading {
@@ -26,6 +23,7 @@
         color: rgba($color-primary, 1);
         text-shadow: 0 .5rem 1rem rgba($color-black, .2);
         margin: 1rem 0;
+        text-align: center;
     }
 
     &__text {

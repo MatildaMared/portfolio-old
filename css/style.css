@@ -345,15 +345,16 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.1);
 }
 
-.card__content {
-  text-align: center;
-  border-radius: .5rem;
-}
-
 .card__icon {
   font-size: 8rem;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: rgba(115, 86, 152, 0.9);
+  padding: 2rem;
 }
 
 .card__heading {
@@ -364,6 +365,7 @@ body {
   color: #735698;
   text-shadow: 0 0.5rem 1rem rgba(25, 15, 38, 0.2);
   margin: 1rem 0;
+  text-align: center;
 }
 
 .card__text {
