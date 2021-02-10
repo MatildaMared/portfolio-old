@@ -9,6 +9,7 @@
 html {
     // This defines what 1 rem is
     font-size: 62.5%;  //1rem = 10px;
+    scroll-behavior: smooth;
 
     @include responsive(big-desktop) {
         font-size: 68.75%;  //1rem = 11, 11/16 = 68.75%
