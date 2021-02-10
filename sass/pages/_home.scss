@@ -53,6 +53,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
         grid-gap: 3rem;
+        background-color: $color-primary;
         background-image: url("../images/background.svg");
         /* background by SVGBackgrounds.com */
         background-attachment: fixed;
@@ -148,6 +149,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-gap: 3rem;
+        background-color: $color-primary;
         background-image: url("../images/background.svg");
         /* background by SVGBackgrounds.com */
         background-attachment: fixed;
@@ -330,6 +332,7 @@
     flex-direction: column;
     align-items: center;
     clip-path: polygon(0% 20%, 100% 0, 100% 100%, 0% 100%);
+    background-color: $color-primary;
     background-image: url("../images/background.svg");
     /* background by SVGBackgrounds.com */
     background-attachment: fixed;
